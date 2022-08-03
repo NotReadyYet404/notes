@@ -2,6 +2,6 @@
 
 ## 目录
 
-- [计算机系统概述](./overview_cs.md)
+- [计算机系统概述](./cs_overview.md)
 - [数据的表示和运算](./data_representation_and_operation.md)
 
