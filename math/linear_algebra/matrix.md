@@ -12,58 +12,42 @@
 
 ---
 
-### 概念和运算
-$m * n$个数排成如下m行n列的一个<bul>表格</bul>  
-$
-\begin{bmatrix}
-	a_{11} & a_{12} & a_{13} & \cdots & a_{1n} \\
-	a_{21} & a_{22} & a_{23} & \cdots & a_{2n} \\
-	\vdots & \vdots & \vdots & \ddots & \vdots \\
-	a_{m1} & a_{m2} & a_{m3} & \cdots & a_{mn}
-\end{bmatrix}
-$  
-称是一个<rul>$m*n$矩阵</rul>，当m=n时，称为<rul>n阶矩阵</rul>或<rul>n阶方阵</rul>。简记A。  
-#### 特殊的几个矩阵
-1. <bm>零矩阵</bm>：  
-如果一个矩阵的所有元素都是0，即
-$$ $$
-则称这个矩阵为零矩阵。简记O  
-如果$A$$B$都是$m*n$矩阵，称A和B为同型矩阵。  
-如果$A$和$B$都是$m*n$矩阵，若$a_{ij}=b_{ij}(\any i=1,2,\cdots,m; j=1,2,\cdots,n)$，称A和B相等，记A=B。  
 
-#### 同型矩阵运算：
-+ 加法：$A+B = [a_{ij}+b_{ij}]$
-+ 数乘：$kA=[ka_{ij}]$
-+ 运算法则：
-	- 加法：$ABC$同型  
-		<card>
-			$A+B=B+A$  
-			$(A+B)+C=A+(B+C)=A+B+C$  
-			$A+O=O+A=A$  
-			$A+(-A)=O$
-		</card>
-	- 数乘：$AB$同型  
-		<card>
-			$k(mA)=m(kA)=(km)A$  
-			$(k+m)A=kA+mA$  
-			$k(A+B)=kA+kB$  
-			$1A=A, 0A=O$  
-		</card>
+### 特殊的几个矩阵或关系
+**零矩阵**：如果一个矩阵的所有元素都是0。
 
-#### <rm>矩阵乘法</rm>  
-$A=[a_{ij}]_{m×s}$，$B=[b_{ij}]_{s×n}$  
-$AB=C=[c_{ij}]_{m×n}$  
-$c_{ij} = a_{i1}b_{1j} + a_{i2}b_{2j} + \cdots + a_{is}b_{sj} = \sum\limits^{s}_{k=1}a_{ik}b_{kj}$  
-:warning:  
-1. <bul>$AB \neq BA$<bul>
-2. <bul>$AB=0 \narrow A=0$ 或 $B=0$</bul>
-3. <bul>$AB=C, A \neq O \narrow B=C$</bul>
+**同型矩阵**：A和B都是m*n的矩阵，就称它们为同型矩阵。
 
-运算法则：  
-<card>
-	$(AB)C=A(BC)=ABC$  
-	<bm>$A(B+C)=AB+AC$  
-	$(A+B)C=AC+BC$</bm>  
-	$AE=A, EA=A$  
-</card>
+
+### 常用运算公式
+
+"组合":  
+- $(A^{T})^{-1} = (A^{-1})^{T}$
+- $(A^{*})^{-1} = (A^{-1})^{*} = \frac{1}{|A|}A$
+- $(A^{*})^{T} = (A^{T})^{*}$
+
+"自组合"：
+- $(A^{T})^{T} = A$
+- <rm>$(A^{*})^{*} = |A|^{n-2}A \ (n \ge 2)$</rm>
+- $(A^{-1})^{-1} = A$
+
+"数乘"：
+- $(kA)^{T} = kA^{T}$
+- $(kA)^{*} = k^{n-1}A^{*}$
+- $(kA)^{-1} = \frac{1}{k}A^{-1}$
+
+"相加"：
+- $(A + B)^{T} = A^{T} + B^{T}$
+- $(A + B)^{*} 不确定$
+- $(A + B)^{-1} 不确定$
+
+"相乘"
+- $(AB)^{T} = B^{T}A^{T}$
+- $(AB)^{*} = B^{*}A^{*}$
+- $(AB)^{-1} = B^{-1}A^{-1}$
+
+"行列式"
+- $|A^{T}| = |A|$
+- $|A^{*}| = |A|^{n-1}$
+- $|A^{-1}| = \frac{1}{|A|}$
 
