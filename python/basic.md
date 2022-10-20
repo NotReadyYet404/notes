@@ -1,3 +1,23 @@
+## 数字
+### 随机数
+- 根据范围生成随机数
+```python
+import random
+
+print(random.randint(0, 9))
+```
+- 随机打乱列表
+```python
+from random import shuffle
+
+list = [....]
+
+print(list)
+shuffle(list)
+print(list)
+```
+
+
 ## 字符串
 - 将列表内容拼接成字符串
 ```python
