@@ -1,20 +1,28 @@
+## 一元函数积分学错题难题集
 
-<card>
+### 不定积分
+- 660 第55题  
+![660-55](./statics/660-55.png)  
 
-求 $I = \int\frac{x^4 +1}{1 + x^6}dx$
+- 660 第56题  
+![660-56](./statics/660-56.png)  
 
-**解:**  
-$I = \int\frac{1+x^4}{1+x^6}dx = \int\frac{1+x^4-x^2+x^2}{1+x^6}dx$  
+- 660 第57题  
+![660-57](./statics/660-57.png)  
 
-$= \int\frac{1-x^2+x^4}{1+x^6}dx + \int\frac{x^2}{1+x^6}dx$
+- 660 第61题  
+![660-61](./statics/660-61.png)  
 
-$= \int\frac{1}{1+x^2}dx + \frac{1}{3}\int\frac{1}{1+x^6}dx^3$
+- 660 第62题  
+![660-61](./statics/660-62.png)  
 
-$= \arctan{x} + \frac{1}{3}\arctan{x^3} + C$
+- 660 第65题  
+![660-65](./statics/660-65.png)  
 
-</card>
-<br>
-<card>
+- 660 第68题  
+![660-68](./statics/660-68.png)  
 
-</card>
+- 660 第70题  
+![660-70](./statics/660-70.png)  
+
 
